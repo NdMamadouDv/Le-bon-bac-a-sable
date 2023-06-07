@@ -1,7 +1,7 @@
 
 import { deskTool } from 'sanity/desk';
 import {defineConfig} from 'sanity'
-import { schemaTypes } from './schemas';
+import { schemaTypes } from '@/schemas';
 
 
 const sanity = process.env.NEXT_PUBLIC_SANITYID
