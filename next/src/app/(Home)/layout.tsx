@@ -1,6 +1,8 @@
 import React from "react";
-import "./globals.css";
+import "@/app/globals.css";
 import { Inter, Lato } from "next/font/google";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const lato = Lato({
@@ -20,10 +22,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr" className={` ${lato.variable} `}>
+    <html lang="fr" className={` ${lato.variable}  `}>
       {/* navbar */}
       {/* Layout */}
-      <body>{children}</body>
+
+      <body className="grow min-h-screen flex flex-col">
+        <Navbar />
+        <main className="grow">{children}</main>
+        <Footer />
+      </body>
       {/* Layout */}
       {/* Footer */}
     </html>
