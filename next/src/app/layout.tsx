@@ -16,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="fr">
       {/* navbar */}
+      {/* Layout */}
       <body>{children}</body>
+      {/* Layout */}
       {/* Footer */}
     </html>
   );
