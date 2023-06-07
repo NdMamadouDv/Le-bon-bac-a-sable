@@ -1,7 +1,13 @@
+import React from "react";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Inter, Lato } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "700", "900"],
+  variable: "--font-Lato",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -14,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr">
+    <html lang="fr" className={` ${lato.variable} `}>
       {/* navbar */}
       {/* Layout */}
       <body>{children}</body>
