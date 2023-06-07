@@ -6,6 +6,10 @@ export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <h1>Bienvenue chez Netoryeti</h1>
+      {/* <h2>
+        {" "}
+        {adminData[0].name} <strong>{adminData[0].name}</strong>{" "}
+      </h2> */}
     </main>
   );
 }
