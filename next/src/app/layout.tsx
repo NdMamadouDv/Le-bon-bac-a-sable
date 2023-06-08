@@ -28,6 +28,16 @@ const Layout: React.FC<Props> = ({ children }: Props) => {
 			</body>
 		</html>
 	);
+const Layout: React.FC<Props> = ({ children }: Props) => {
+  return (
+    <html lang="fr">
+      <body className={`${montserrat.variable}`}>
+        <LayoutMain navFixed>
+          <Suspense fallback={<Loading />}>{children}</Suspense>
+        </LayoutMain>
+      </body>
+    </html>
+  );
 };
 
 export default Layout;
