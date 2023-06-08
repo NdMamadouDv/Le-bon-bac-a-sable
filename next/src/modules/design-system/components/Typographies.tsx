@@ -1,7 +1,7 @@
 import CardTypographies from "./cards/CardTypographies";
 import { Container } from "@/components/containers/Container";
 import Typography from "@/components/ui/Typography";
-import { keyGenerator } from "@/utils/generateKey";
+import { keyGenerator } from "@/utils/keyGenerator";
 
 const Typographies = () => {
 	const variants: string[] = [

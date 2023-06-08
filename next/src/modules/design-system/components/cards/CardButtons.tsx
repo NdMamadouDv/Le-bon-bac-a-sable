@@ -1,5 +1,5 @@
 import Typography from "@/components/ui/Typography";
-import { Button } from "@/components/ui/Button";
+import Button from "@/components/ui/Button";
 import { SlHandbag } from "react-icons/sl";
 
 type Props = {
