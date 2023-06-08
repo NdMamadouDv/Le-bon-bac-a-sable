@@ -5,6 +5,7 @@ const ServicesView = () => {
   return (
     <>
       <Hero />
+      <div className="h-screen"></div>
     </>
   );
 };

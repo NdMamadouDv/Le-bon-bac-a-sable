@@ -105,16 +105,17 @@ module.exports = {
     extend: {
       fontFamily: {
         krub: ["var(--font-krub)"],
+        hkGrotesk: ["var(--font-hkGrotesk)"],
+        lato: ["var(--font-lato)"],
       },
       colors: {
         primary: "#1632AC",
-        "primary-focused": "#08155f",
+        "primary-focus": "#08155f",
         "primary-content": "#4E69DF",
-        secondary: "#",
-        "secondary-focused": "#",
-        "secondary-content": "#",
-        neutral: "#",
-        "base-300": "",
+        secondary: "#272729",
+        "secondary-focus": "#111114",
+        "secondary-content": "#E9E9E9",
+        neutral: "#111114",
       },
     },
   },
