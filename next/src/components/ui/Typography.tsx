@@ -13,7 +13,7 @@ import clsx from "clsx";
 
 type Props = {
   children: React.ReactNode;
-  font?: "title" | "main" | "emphasize";
+  font?: "title" | "main" | "emphasize" | "description" | "customize";
   className?: string;
   theme?: "primary" | "secondary" | "customize";
   component?: "h1" | "h2" | "h3" | "h4" | "h5" | "div" | "p" | "span" | "li";
@@ -48,7 +48,7 @@ const Typography = ({
 
   switch (variant) {
     case "display":
-      variantStyle = "text-7xl md:text-8xl 2xl:text-9xl";
+      variantStyle = "text-5xl md:text-6xl 2xl:text-7xl";
       break;
     case "h1":
       variantStyle = "text-4xl md:text-5xl 2xl:text-6xl";
@@ -99,13 +99,19 @@ const Typography = ({
 
   switch (font) {
     case "title":
-      fontStyle = "font-title";
+      fontStyle = "font-krub";
       break;
     case "main":
-      fontStyle = "font-krub";
+      fontStyle = "font-lato";
       break;
     case "emphasize":
       fontStyle = "font-emphasize";
+      break;
+    case "description":
+      themeStyle = "font-hkGrotesk";
+      break;
+    case "customize":
+      themeStyle = "";
       break;
   }
 

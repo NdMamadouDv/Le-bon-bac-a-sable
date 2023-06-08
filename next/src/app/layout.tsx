@@ -8,12 +8,99 @@ import localFont from "next/font/local";
 const krub = localFont({
   src: [
     {
+      path: "../assets/Fonts/Krub/Krub-Light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
       path: "../assets/Fonts/Krub/Krub-Medium.ttf",
       weight: "400",
       style: "normal",
     },
+    {
+      path: "../assets/Fonts/Krub/Krub-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../assets/Fonts/Krub/Krub-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../assets/Fonts/Krub/Krub-Italic.ttf",
+      style: "normal",
+    },
   ],
   variable: "--font-krub",
+});
+const hkGrotesk = localFont({
+  src: [
+    {
+      path: "../assets/Fonts/Hk-grotesk/HKGrotesk-Light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../assets/Fonts/Hk-grotesk/HKGrotesk-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../assets/Fonts/Hk-grotesk/HKGrotesk-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../assets/Fonts/Hk-grotesk/HKGrotesk-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../assets/Fonts/Hk-grotesk/HKGrotesk-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../assets/Fonts/Hk-grotesk/HKGrotesk-Italic.ttf",
+      style: "normal",
+    },
+  ],
+  variable: "--font-hkGrotesk",
+});
+const lato = localFont({
+  src: [
+    {
+      path: "../assets/Fonts/Lato/Lato-Thin.ttf",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "../assets/Fonts/Lato/Lato-Light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../assets/Fonts/Lato/Lato-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../assets/Fonts/Lato/Lato-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../assets/Fonts/Lato/Lato-Black.ttf",
+      weight: "900",
+      style: "normal",
+    },
+    {
+      path: "../assets/Fonts/Lato/Lato-Italic.ttf",
+      style: "normal",
+    },
+  ],
+  variable: "--font-lato",
 });
 export const metadata = {
   title: "Create Next App",
@@ -27,7 +114,9 @@ type Props = {
 const Layout: React.FC<Props> = ({ children }: Props) => {
   return (
     <html lang="fr">
-      <body className={`${krub.variable}`}>
+      <body
+        className={`${krub.variable} ${hkGrotesk.variable} ${lato.variable} `}
+      >
         <LayoutMain navFixed>
           <Suspense fallback={<Loading />}>{children}</Suspense>
         </LayoutMain>
