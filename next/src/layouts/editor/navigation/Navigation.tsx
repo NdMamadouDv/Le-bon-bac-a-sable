@@ -18,11 +18,12 @@ type asideCategory = asideOption[];
 const asideCategories: asideCategory[] = [
 	[{ icon: { icon: AiFillHome }, name: "" }],
 	[
-		{ icon: { icon: FiSettings }, name: "" },
+		{ icon: { icon: TbLetterN }, name: "" },
 		{ icon: { icon: RiNumber1 }, name: "" },
 		{ icon: { icon: RiNumber2 }, name: "" },
 		{ icon: { icon: RiNumber3 }, name: "" },
 		{ icon: { icon: TbLetterF }, name: "" },
+		{ icon: { icon: AiOutlinePlus }, name: "" },
 	],
 ];
 
@@ -41,6 +42,7 @@ const Navigation: React.FC = () => {
 			))}
 
 			<div className="md:hidden p-2 bg-slate-700 rounded-md flex flex-col gap-2">
+				i
 				<Option>
 					<FiSettings className="text-3xl" />
 				</Option>
