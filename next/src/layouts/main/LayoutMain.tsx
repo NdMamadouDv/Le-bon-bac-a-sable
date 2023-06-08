@@ -17,7 +17,7 @@ const LayoutMain = ({ children, navFixed = false }: Props) => {
 				<Navigation fixed={navFixed} />
 			)}
 			<main className="flex-grow">{children}</main>
-			{pathname !== "/editor" || ("/services" && <Footer />)}
+			{pathname !== "/editor" && <Footer />}
 		</div>
 	);
 };
