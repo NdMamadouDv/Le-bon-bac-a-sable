@@ -102,7 +102,7 @@ const Typography = ({
       fontStyle = "font-title";
       break;
     case "main":
-      fontStyle = "font-montserrat";
+      fontStyle = "font-krub";
       break;
     case "emphasize":
       fontStyle = "font-emphasize";
