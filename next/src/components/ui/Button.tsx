@@ -109,7 +109,7 @@ const Button = ({
 			)}
 			onClick={onClick}
 			disabled={disabled}>
-			{!text && !icon && "La prop 'text' Mamadoooou !!!"}
+			{!text && !icon && "Prop text or icon ????"}
 			{text && !icon && text}
 			{!text && icon && <icon.icon />}
 			{text && icon && (
