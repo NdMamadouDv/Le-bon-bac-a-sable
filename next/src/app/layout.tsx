@@ -18,6 +18,7 @@ type Props = {
   children: React.ReactNode;
 };
 
+
 export default function RootLayout({ children }: Props) {
   return (
     <html lang="fr">
@@ -29,3 +30,18 @@ export default function RootLayout({ children }: Props) {
     </html>
   );
 }
+
+const Layout: React.FC<Props> = ({ children }: Props) => {
+	return (
+		<html lang="fr">
+			<body>
+				<LayoutMain navFixed>
+					<Suspense fallback={<Loading />}>{children}</Suspense>
+				</LayoutMain>
+			</body>
+		</html>
+	);
+};
+
+export default Layout;
+
