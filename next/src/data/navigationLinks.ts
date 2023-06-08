@@ -21,4 +21,9 @@ export const navigationLinks: navlink[] = [
 		baseUrl: "/sections",
 		isInternal: true,
 	},
+	{
+		label: "Services",
+		baseUrl: "/services",
+		isInternal: true,
+	},
 ];
