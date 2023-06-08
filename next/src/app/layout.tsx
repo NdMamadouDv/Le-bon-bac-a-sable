@@ -12,7 +12,7 @@ type Props = {
 	children: React.ReactNode;
 };
 
-export default function RootLayout({ children }: Props) {
+const Layout: React.FC<Props> = ({ children }: Props) => {
 	return (
 		<html lang="fr">
 			<body>
@@ -22,4 +22,6 @@ export default function RootLayout({ children }: Props) {
 			</body>
 		</html>
 	);
-}
+};
+
+export default Layout;
