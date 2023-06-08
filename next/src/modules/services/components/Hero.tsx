@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="min-h-screen  py-24">
       <Container>
-        <Typography variant="h1" theme="primary" font="main">
+        <Typography variant="h1" component="h1" theme="primary" font="main">
           {" "}
           Nos services
         </Typography>
