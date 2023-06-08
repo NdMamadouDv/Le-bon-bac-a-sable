@@ -1,0 +1,23 @@
+.activeLink,
+.notActiveLink {
+	position: relative;
+}
+
+.activeLink::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #e1c265;
+}
+.notActiveLink::before {
+	content: "";
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	background-color: #e1c265;
+	transition: all 0.2s;
+}
+.notActiveLink:hover::before {
+	width: 30%;
+}
