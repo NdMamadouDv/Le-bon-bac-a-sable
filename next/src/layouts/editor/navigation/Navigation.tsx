@@ -16,7 +16,6 @@ type asideOption = {
 type asideCategory = asideOption[];
 
 const asideCategories: asideCategory[] = [
-	[{ icon: { icon: AiFillHome }, name: "" }],
 	[
 		{ icon: { icon: TbLetterN }, name: "" },
 		{ icon: { icon: RiNumber1 }, name: "" },
@@ -25,13 +24,24 @@ const asideCategories: asideCategory[] = [
 		{ icon: { icon: TbLetterF }, name: "" },
 		{ icon: { icon: AiOutlinePlus }, name: "" },
 	],
+	[
+		{ icon: { icon: BsShare }, name: "" },
+		{ icon: { icon: AiOutlineCheck }, name: "" },
+	],
 ];
 
 const Navigation: React.FC = () => {
 	return (
 		<aside className="flex flex-col gap-4 fixed left-1/2 -translate-x-1/2 bottom-10 md:top-1/2 md:-translate-y-1/2 md:left-16">
+			<nav className="px-2 py-4 bg-slate-700 rounded-md md:flex hidden md:flex-col md:gap-2">
+				<Link href={"/"}>
+					<Option>
+						<AiFillHome className="text-3xl" />
+					</Option>
+				</Link>
+			</nav>
 			{asideCategories?.map((category) => (
-				<div className="p-2 bg-slate-700 md:flex hidden md:flex-col md:gap-2 rounded-md">
+				<div className="px-2 py-4 bg-slate-700 md:flex hidden md:flex-col md:gap-2 rounded-md">
 					{category?.map((option) => (
 						<Option>
 							<option.icon.icon className="text-3xl" />
@@ -41,36 +51,10 @@ const Navigation: React.FC = () => {
 				</div>
 			))}
 
-			<div className="md:hidden p-2 bg-slate-700 rounded-md flex flex-col gap-2">
+			<div className="md:hidden px-2 py-4 bg-slate-700 rounded-md flex flex-col gap-2">
 				i
 				<Option>
 					<FiSettings className="text-3xl" />
-				</Option>
-			</div>
-			<nav className="p-2 bg-slate-700 rounded-md md:flex hidden md:flex-col md:gap-2">
-				<Link href={"/"}>
-					<Option>
-						<AiFillHome className="text-3xl" />
-					</Option>
-				</Link>
-			</nav>
-			<div className="p-2 bg-slate-700 md:flex hidden md:flex-col md:gap-2 rounded-md">
-				<Option>N</Option>
-				<Option>1</Option>
-				<Option>2</Option>
-				<Option>3</Option>
-				<Option>F</Option>
-				<Option>
-					<AiOutlinePlus />
-				</Option>
-			</div>
-
-			<div className="p-2 bg-slate-700 md:flex hidden md:flex-col md:gap-2 rounded-md">
-				<Option>
-					<BsShare />
-				</Option>
-				<Option>
-					<AiOutlineCheck />
 				</Option>
 			</div>
 		</aside>
