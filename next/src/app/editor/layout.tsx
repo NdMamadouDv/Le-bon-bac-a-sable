@@ -1,4 +1,5 @@
 import LayoutEditor from "@/layouts/editor/LayoutEditor";
+import EditorProvider from "@/context/editorContext";
 
 export const metadata = {
 	title: "Editez votre site 😁",
@@ -11,7 +12,11 @@ type Props = {
 };
 
 const Layout: React.FC<Props> = ({ children }: Props) => {
-	return <LayoutEditor>{children}</LayoutEditor>;
+	return (
+		<EditorProvider>
+			<LayoutEditor>{children}</LayoutEditor>
+		</EditorProvider>
+	);
 };
 
 export default Layout;
