@@ -38,7 +38,7 @@ const Button = ({
       break;
     case "secondary":
       variantStyles =
-        "hover:text-neutral hover:bg-secondary-content bg-secondary-focus text-white";
+        "text-neutral bg-secondary-content hover:bg-secondary-focus hover:text-white";
       break;
     case "neutral":
       variantStyles = "bg-gray-300 hover:bg-gray-300/80 text-gray-700";
