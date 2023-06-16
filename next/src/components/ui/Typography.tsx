@@ -27,7 +27,7 @@ type Props = {
     | "body-base"
     | "body-sm"
     | "body-xs";
-  weight?: "regular" | "medium";
+  weight?: "light" | "regular" | "medium" | "semibold" | "bold";
   editable?: boolean;
 };
 
@@ -48,7 +48,7 @@ const Typography = ({
 
   switch (variant) {
     case "display":
-      variantStyle = "text-5xl md:text-6xl 2xl:text-7xl";
+      variantStyle = "text-d-sm md:text-d-md 2xl:text-d-lg";
       break;
     case "h1":
       variantStyle = "text-4xl md:text-5xl 2xl:text-6xl";
@@ -77,11 +77,21 @@ const Typography = ({
   }
 
   switch (weight) {
+    case "light":
+      weightStyle = "font-light";
+      break;
     case "regular":
       weightStyle = "font-normal";
       break;
+
     case "medium":
       weightStyle = "font-medium";
+      break;
+    case "semibold":
+      weightStyle = "font-semibold";
+      break;
+    case "bold":
+      weightStyle = "font-bold";
       break;
   }
 

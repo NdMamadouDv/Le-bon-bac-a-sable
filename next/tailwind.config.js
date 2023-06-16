@@ -8,40 +8,40 @@ module.exports = {
   ],
   theme: {
     fontSize: {
-      "9xl": [
-        "10rem",
+      "d-lg": [
+        "5.5rem",
         {
           lineHeight: "9.8rem",
           letterSpacing: "0.001rem",
         },
       ],
-      "8xl": [
-        "8.5rem",
+      "d-md": [
+        "5rem",
         {
           lineHeight: "7.2rem",
           letterSpacing: "0.001rem",
         },
       ],
 
-      "7xl": [
-        "7.7rem",
+      "d-sm": [
+        "3.8rem",
         {
-          lineHeight: "6.2rem",
-          letterSpacing: "0.001rem",
+          lineHeight: "3.5rem",
+          letterSpacing: "0.1rem",
         },
       ],
 
       "6xl": [
-        "5rem",
+        "4rem",
         {
           lineHeight: "6rem",
           letterSpacing: "0.1rem",
         },
       ],
       "5xl": [
-        "4rem",
+        "3.5rem",
         {
-          lineHeight: "5rem",
+          lineHeight: "3.5rem",
           letterSpacing: "0.1rem",
         },
       ],
